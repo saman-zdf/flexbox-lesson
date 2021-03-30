@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .container {
+        display: flex;
+      }
+      .img-1,
+      .img-2 {
+        width: 400px;
+        height: 300px;
+        display: inline-block;
+        margin: 1rem;
+      }
+      .img-1 {
+        border-radius: 20px;
+        border-bottom-left-radius: 0;
+      }
+      .img-2 {
+        border-radius: 20px;
+        border-bottom-right-radius: 0;
+      }
+      @media (max-width: 768px) {
+        .img-container {
+          flex-direction: column;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="img-container">
+      <img src="./pic-2.jpg" class="img-1" alt="" />
+      <img src="./pic-1.jpg" class="img-2" alt="" />
+    </div>
+  </body>
+</html>
